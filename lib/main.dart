@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tskmgt_withbcknd/screens/add_task.dart';
+import 'package:tskmgt_withbcknd/screens/all_tasks.dart';
 
 import 'screens/home_screen.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: AddTask(),
+      home: AllTasks(),
     );
   }
 }
