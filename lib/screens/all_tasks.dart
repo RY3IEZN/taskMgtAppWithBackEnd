@@ -123,7 +123,7 @@ class AllTasks extends StatelessWidget {
                                     ),
                                     ButtonWidget(
                                         bgcolor: Color(0xFF202e59),
-                                        text: "View",
+                                        text: "Edit",
                                         textColor: Colors.white),
                                   ],
                                 ));

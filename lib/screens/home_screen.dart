@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tskmgt_withbcknd/screens/all_tasks.dart';
 import 'package:tskmgt_withbcknd/widgets/button_widget.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -50,10 +52,15 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: 10,
             ),
-            ButtonWidget(
-                bgcolor: Colors.white,
-                text: "View All",
-                textColor: Color(0xFF202e59))
+            InkWell(
+              onTap: () {
+                Get.to(() => AllTasks(), transition: Transition.cupertino);
+              },
+              child: ButtonWidget(
+                  bgcolor: Colors.white,
+                  text: "View All",
+                  textColor: Color(0xFF202e59)),
+            )
           ],
         ),
       ),
